@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 80vh;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.card {
+  box-shadow: 2.3px 2.3px 1.9px rgba(0, 0, 0, 0.034),
+    5.4px 5.4px 4.3px rgba(0, 0, 0, 0.049),
+    9.7px 9.7px 7.7px rgba(0, 0, 0, 0.06),
+    16.1px 16.1px 12.8px rgba(0, 0, 0, 0.07),
+    26.5px 26.5px 21.2px rgba(0, 0, 0, 0.081),
+    46.2px 46.2px 37px rgba(0, 0, 0, 0.096),
+    100px 100px 80px rgba(0, 0, 0, 0.13);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 450px;
+  height: auto;
+  background-color: #000000d0;
+  opacity: 0.8;
+  color: white;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  word-spacing: 2rem;
+}
+
+.search {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.serachbar {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 3px solid #fafafa;
+  border-left: 3px solid #fafafa;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  overflow: hidden;
+  padding: 5px 5;
+  outline: none;
+  font-size: 25px;
+}
+
+input {
+  border: none;
+  padding: 10px;
+  text-transform: capitalize;
+  background-color: #7c7c7c2b;
+  color: white;
+}
+
+.searchBtn {
+  width: 80px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 20px;
+  border: none;
+}
+
+.city {
+  text-align: left;
+  margin-left: 10%;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  margin-left: 10%;
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: "Merriweather", serif;
+  text-transform: capitalize;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 10px;
+}
+
+.weather .loading {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .card {
+    margin: 0px 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .details {
+    font-size: 1rem;
+  }
+
+  .city {
+    font-size: 1.2rem;
+  }
+
+  .searchBtn {
+    width: 60px;
+    height: 40px;
+  }
+
+  .serachbar {
+    font-size: 1rem;
+  }
+}
