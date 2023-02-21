@@ -1,19 +1,15 @@
-pipeline { 
-  agent any 
-  stages {
-    stage ( " Build" )
-    {
-      steps {
-        sh "npm install node"
-            }
-    }
-  }
-  stages {
-    stage ("Test")
-    {
-      steps{
-        echo "Tesing is done"
+pipeline {
+     agent any
+     stages {
+      stage ("Build Up"){
+        steps {
+          sh "npm install node"
+        }
       }
-    }
-  }
-  }
+      stage("Test"){
+        steps{
+           ech "Testing Done.."
+        }
+      }
+   }
+}
